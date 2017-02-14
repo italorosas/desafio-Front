@@ -1,0 +1,98 @@
+.wrapper{
+	margin: 0 auto;
+	width: 970px;
+	background-color:darkgrey;
+}
+.wrapper p{
+	font-family:arial black;
+	width: 150px;
+	display: inline-block;
+}
+.aviso {background-color:red;}
+
+.container-fluid {
+    width: 90%;
+    padding: 5%;
+}
+
+.list-group.numeros {
+    clear: both;
+    position: relative;
+    width: 90%;
+    padding: 5%;
+}
+
+.numero {
+    clear: both;
+    position: relative;
+    transition: all 1.5s ease;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0;
+    border: 2px solid #aaa; 
+    border-radius: 0 !important;
+}
+
+.numero.pasado {
+    border: 2px solid #000;  
+}
+
+.numero.actual {
+    border: 2px solid red;  
+}
+.numero-move {
+    position: relative;
+    border-color: red;
+    transition: all 1.5s ease;    
+    top: 50px;
+    left: 50px;
+}
+
+.numero-move.numero-move-active {
+    transition: all 1.5s ease;
+    border-color: orange;
+    top: 0;
+}
+
+.numero-move + li {
+    position: relative;
+    border-color: brown;
+    top: -50px;
+}
+
+.numero-move.numero-move-active + li {
+    transition: all 1.5s ease;
+    position: relative;
+    border-color: purple;
+    top: 0;
+}
+
+.numero-enter {
+    position: relative;
+    opacity: 0.0;
+    transition: all 0.25s ease;
+    border-color: green;
+    height: 0;
+    left: 50px;
+}
+
+.numero-enter.numero-enter-active {
+    transition: all 0.25s ease;
+    opacity: 1.0;
+    border-color: blue;
+    left: 50px;
+    height: 50px;
+}
+
+.numero-leave.numero-leave-active {
+    transition: all 0.25s ease;
+    opacity: 0.0;
+    border-color: gray;
+    left: 50px;
+    height: 0;
+    top: -50px;
+}
+.ng-click{
+    margin: 10px;
+}
